@@ -12,7 +12,7 @@ app.use('./images', express.static(__dirname + 'public/images'));
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
-app.use('/api', viewsRouter);
+app.use('', viewsRouter);
 
 app.server = app.listen(port, () => {
     console.log(`running in port ${port}`);

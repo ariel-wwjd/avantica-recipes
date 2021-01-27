@@ -5,7 +5,7 @@ function routes() {
     const router = express.Router();
     const controller = viewsController();
 
-    router.route('/home')
+    router.route('/')
         .get(controller.getLandingPage);
 
     return router;
